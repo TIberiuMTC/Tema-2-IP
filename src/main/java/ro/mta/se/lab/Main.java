@@ -8,6 +8,11 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
+import java.net.URL;
+
 public class Main extends Application {
     public static void main(String[] args)
     {
@@ -19,6 +24,11 @@ public class Main extends Application {
         Parent loader=FXMLLoader.load(getClass().getResource("/view/LogIn.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setScene(new Scene(loader,600,400));
+
+    public void start(Stage primaryStage) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(this.getClass().getResource("/view/WeatherView.fxml"));
+        primaryStage.setScene(new Scene(loader.load()));
         primaryStage.show();
     }
 }
