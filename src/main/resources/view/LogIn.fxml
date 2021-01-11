@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.se.lab.controler.LogInControler">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #133B8E;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="200.0" layoutX="44.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../WeatherIco.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="90.0" layoutX="166.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../lock.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="111.0" text="Username" />
+            <Label layoutX="24.0" layoutY="155.0" text="Password" />
+            <TextField fx:id="enterUsernameField" layoutX="92.0" layoutY="107.0" prefHeight="25.0" prefWidth="238.0" />
+            <PasswordField fx:id="enterPasswordField" layoutX="92.0" layoutY="151.0" prefHeight="25.0" prefWidth="238.0" />
+            <Button fx:id="loginButton" layoutX="96.0" layoutY="240.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="236.0" text="Log In" />
+            <Button fx:id="cancelButton" layoutX="95.0" layoutY="311.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="239.0" text="Cancel" />
+            <Label layoutX="129.0" layoutY="200.0" prefHeight="17.0" prefWidth="246.0" text="Invalid Log In, please try again" textAlignment="JUSTIFY" />
+            <Button fx:id="registerButton" layoutX="97.0" layoutY="275.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="237.0" text="Register" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
