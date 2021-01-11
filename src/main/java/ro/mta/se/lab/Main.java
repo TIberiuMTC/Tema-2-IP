@@ -1,6 +1,13 @@
 package ro.mta.se.lab;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import java.io.IOException;
+
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -11,6 +18,12 @@ public class Main extends Application {
     {
         launch(args);
     }
+
+    @Override
+    public void start(Stage primaryStage) throws IOException {
+        Parent loader=FXMLLoader.load(getClass().getResource("/view/LogIn.fxml"));
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.setScene(new Scene(loader,600,400));
 
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader loader = new FXMLLoader();

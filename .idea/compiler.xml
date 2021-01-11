@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AplicatieVreme" />
+
+        <module name="Tema2IP" />
+
+         master
+        <module name="Tema2IP" />
       </profile>
     </annotationProcessing>
   </component>
