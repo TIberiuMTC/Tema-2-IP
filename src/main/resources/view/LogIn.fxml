@@ -6,22 +6,22 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.se.lab.controler.LogInControler">
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #133B8E;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0078d7;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="113.0" fitWidth="200.0" layoutX="44.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="113.0" fitWidth="165.0" layoutX="44.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../WeatherIco.png" />
+                  <Image url="@WeatherIco.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
    </left>
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="66.0" fitWidth="90.0" layoutX="166.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../lock.jpg" />
+                  <Image url="@lock.jpg" />
                </image>
             </ImageView>
             <Label layoutX="22.0" layoutY="111.0" text="Username" />

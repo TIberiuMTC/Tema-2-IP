@@ -1,0 +1,40 @@
+13-01-2021 18:41:30  tiberiu441  Tarascon  Current Temperature: 285.47  Current Humidity: 71.0  Wind Speed: 6.17  Wind Angle: 350.0
+13-01-2021 18:44:38  tiberiu441  Ploufragan  Current Temperature: 282.06  Current Humidity: 87.0  Wind Speed: 4.12  Wind Angle: 270.0
+13-01-2021 19:31:46  tiberiu441  Ploufragan  Current Temperature: 282.25  Current Humidity: 81.0  Wind Speed: 4.12  Wind Angle: 270.0
+13-01-2021 19:40:48  tiberiu441  Ploufragan  Current Temperature: 282.25  Current Humidity: 81.0  Wind Speed: 4.12  Wind Angle: 270.0
+13-01-2021 20:30:45  tiberiu441  Bucharest  Current Temperature: 273.91  Current Humidity: 86.0  Wind Speed: 1.54  Wind Angle: 270.0
+13-01-2021 20:32:07  tiberiu441  Bucharest  Current Temperature: 273.91  Current Humidity: 86.0  Wind Speed: 1.54  Wind Angle: 270.0
+13-01-2021 20:51:52  tiberiu441  Constanța  Current Temperature: 274.2  Current Humidity: 93.0  Wind Speed: 6.17  Wind Angle: 270.0
+13-01-2021 21:10:34  tiberiu441  Tarascon  Current Temperature: 282.17  Current Humidity: 62.0  Wind Speed: 3.6  Wind Angle: 280.0
+13-01-2021 21:11:35  tiberiu441  Constanța  Current Temperature: 274.21  Current Humidity: 93.0  Wind Speed: 6.17  Wind Angle: 270.0
+13-01-2021 21:44:11  tiberiu441  Razvilka  Current Temperature: 260.98  Current Humidity: 85.0  Wind Speed: 8.0  Wind Angle: 80.0
+13-01-2021 21:47:42  tiberiu441  Constanța  Current Temperature: 274.2  Current Humidity: 93.0  Wind Speed: 5.66  Wind Angle: 280.0
+13-01-2021 21:52:44  tiberiu441  Milan  Current Temperature: 276.31  Current Humidity: 87.0  Wind Speed: 3.09  Wind Angle: 90.0
+13-01-2021 22:11:38  tiberiu441  Berlin  Current Temperature: 274.24  Current Humidity: 86.0  Wind Speed: 7.72  Wind Angle: 270.0
+13-01-2021 22:29:43  tiberiu441  Istanbul  Current Temperature: 279.15  Current Humidity: 81.0  Wind Speed: 4.12  Wind Angle: 10.0
+13-01-2021 22:33:06  tiberiu441  Berlin  Current Temperature: 274.24  Current Humidity: 86.0  Wind Speed: 7.72  Wind Angle: 270.0
+13-01-2021 22:42:15  tiberiu441  Istanbul  Current Temperature: 278.68  Current Humidity: 81.0  Wind Speed: 2.57  Wind Angle: 10.0
+13-01-2021 22:58:24  tiberiu441  Istanbul  Current Temperature: 278.68  Current Humidity: 81.0  Wind Speed: 2.57  Wind Angle: 10.0
+13-01-2021 23:03:31  tiberiu441  Munich  Current Temperature: 275.09  Current Humidity: 89.0  Wind Speed: 0.89  Wind Angle: 290.0
+13-01-2021 23:04:26  tiberiu441  Munich  Current Temperature: 275.09  Current Humidity: 89.0  Wind Speed: 0.89  Wind Angle: 290.0
+13-01-2021 23:04:30  tiberiu441  Berlin  Current Temperature: 274.09  Current Humidity: 86.0  Wind Speed: 8.75  Wind Angle: 280.0
+13-01-2021 23:04:34  tiberiu441  Slatina  Current Temperature: 272.66  Current Humidity: 74.0  Wind Speed: 5.14  Wind Angle: 280.0
+13-01-2021 23:05:06  tiberiu441  Bucharest  Current Temperature: 273.39  Current Humidity: 93.0  Wind Speed: 1.54  Wind Angle: 290.0
+13-01-2021 23:05:13  tiberiu441  Constanța  Current Temperature: 273.15  Current Humidity: 100.0  Wind Speed: 4.63  Wind Angle: 290.0
+13-01-2021 23:05:23  tiberiu441  Tarascon  Current Temperature: 281.19  Current Humidity: 62.0  Wind Speed: 3.6  Wind Angle: 300.0
+13-01-2021 23:05:26  tiberiu441  Ploufragan  Current Temperature: 282.25  Current Humidity: 81.0  Wind Speed: 5.14  Wind Angle: 240.0
+13-01-2021 23:05:28  tiberiu441  Paris  Current Temperature: 282.27  Current Humidity: 93.0  Wind Speed: 8.75  Wind Angle: 280.0
+13-01-2021 23:05:31  tiberiu441  Rome  Current Temperature: 279.86  Current Humidity: 57.0  Wind Speed: 4.12  Wind Angle: 220.0
+13-01-2021 23:05:34  tiberiu441  Milan  Current Temperature: 275.02  Current Humidity: 86.0  Wind Speed: 1.54  Wind Angle: 60.0
+13-01-2021 23:05:39  tiberiu441  Ankara  Current Temperature: 275.86  Current Humidity: 93.0  Wind Speed: 2.06  Wind Angle: 240.0
+13-01-2021 23:06:07  tiberiu441  Istanbul  Current Temperature: 278.68  Current Humidity: 81.0  Wind Speed: 2.57  Wind Angle: 360.0
+13-01-2021 23:06:12  tiberiu441  Athens  Current Temperature: 283.42  Current Humidity: 58.0  Wind Speed: 2.06  Wind Angle: 340.0
+13-01-2021 23:06:14  tiberiu441  Thessaloniki  Current Temperature: 279.28  Current Humidity: 61.0  Wind Speed: 8.75  Wind Angle: 350.0
+13-01-2021 23:15:19  tiberiu441  Razvilka  Current Temperature: 260.98  Current Humidity: 85.0  Wind Speed: 8.0  Wind Angle: 80.0
+13-01-2021 23:19:31  tiberiu441  Bucharest  Current Temperature: 273.38  Current Humidity: 93.0  Wind Speed: 1.03  Wind Angle: 0.0
+13-01-2021 23:25:30  tiberiu441  Ploufragan  Current Temperature: 282.25  Current Humidity: 81.0  Wind Speed: 4.12  Wind Angle: 230.0
+14-01-2021 00:12:53  tiberiu441  Milan  Current Temperature: 274.43  Current Humidity: 86.0  Wind Speed: 1.03  Wind Angle: 0.0  Main Weather: Clear   Weather details : clear sky
+14-01-2021 00:16:29  tiberiu441  Constanța  Current Temperature: 273.15  Current Humidity: 100.0  Wind Speed: 4.12  Wind Angle: 280.0  Main Weather: Snow   Weather details : light snow
+14-01-2021 00:16:36  tiberiu441  Bucharest  Current Temperature: 273.83  Current Humidity: 93.0  Wind Speed: 0.51  Wind Angle: 0.0  Main Weather: Mist   Weather details : mist
+14-01-2021 00:20:40  tiberiu441  Bucharest  Current Temperature: 273.83  Current Humidity: 93.0  Wind Speed: 0.51  Wind Angle: 0.0  Main Weather: Mist   Weather details : mist
+14-01-2021 00:22:04  tiberiu441  Bucharest  Current Temperature: 273.83  Current Humidity: 93.0  Wind Speed: 0.51  Wind Angle: 0.0  Main Weather: Mist   Weather details : mist

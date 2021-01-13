@@ -1,0 +1,1 @@
+13-01-2021 16:35:08  tiberiu_mihai  Rome  Current Temperature: 272.18  Current Humidity: 86.0  Wind Speed: 1.18  Wind Angle: 312.0
