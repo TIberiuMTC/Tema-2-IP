@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.se.lab.controler.WeatherControler">
-   <children>
-      <Pane layoutX="159.0" layoutY="82.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-   </children>
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.se.lab.controler.WeatherControler">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #133B8E;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="114.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../WeatherIco.png" />
+               </image></ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ChoiceBox fx:id="countryDrop" layoutX="14.0" layoutY="33.0" onAction="#cityDropOnAction" prefWidth="150.0" />
+            <ChoiceBox fx:id="cityDrop" layoutX="221.0" layoutY="33.0" prefWidth="150.0" />
+            <Label layoutX="68.0" layoutY="14.0" text="Country" />
+            <Label layoutX="282.0" layoutY="14.0" text="City" />
+            <Button fx:id="actionButton" layoutX="109.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Button" onAction="#actionButtonOnAction" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
