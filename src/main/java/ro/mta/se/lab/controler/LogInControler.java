@@ -4,8 +4,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
@@ -28,6 +31,8 @@ public class LogInControler {
     private TextField enterUsernameField;
     @FXML
     private TextField enterPasswordField;
+    @FXML
+    private Label infoLabel;
 
     public static int stringCompare(String str1, String str2) {
         int l1 = str1.length();
@@ -54,9 +59,6 @@ public class LogInControler {
             String user=enterUsernameField.getText();
             String password=enterPasswordField.getText();
 
-            System.out.println(user);
-            System.out.println(password);
-
             File FileReader = new File("users.txt");
             Scanner myReader = new Scanner(FileReader);
             while (myReader.hasNextLine()) {
@@ -65,10 +67,6 @@ public class LogInControler {
                 ArrayList<String> tok = new ArrayList<String>();
                 while (defaultTokenizer.hasMoreTokens()) {
                     tok.add(defaultTokenizer.nextToken());
-                }
-
-                for (int i=0;i<tok.size();i++){
-                    System.out.println(tok.get(i));
                 }
 
                 if (stringCompare(user,tok.get(0))==0 && stringCompare(password,tok.get(1))==0){
@@ -85,6 +83,7 @@ public class LogInControler {
                     break;
                 }
             }
+            infoLabel.setText("Invalid Log In attempt");
         }catch(Exception e){
 
         }

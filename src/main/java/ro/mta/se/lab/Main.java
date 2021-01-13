@@ -21,14 +21,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent loader=FXMLLoader.load(getClass().getResource("/view/LogIn.fxml"));
+        Parent loader = FXMLLoader.load(getClass().getResource("/view/LogIn.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setScene(new Scene(loader,600,400));
-
-    public void start(Stage primaryStage) throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("/view/WeatherView.fxml"));
-        primaryStage.setScene(new Scene(loader.load()));
+        primaryStage.setScene(new Scene(loader, 600, 400));
         primaryStage.show();
     }
 }
