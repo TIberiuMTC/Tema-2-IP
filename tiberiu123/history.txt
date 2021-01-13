@@ -1,0 +1,1 @@
+13-01-2021 16:53:06  tiberiu123  Bucharest  Current Temperature: 274.47  Current Humidity: 93.0  Wind Speed: 4.12  Wind Angle: 250.0

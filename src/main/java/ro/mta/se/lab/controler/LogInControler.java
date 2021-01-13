@@ -14,6 +14,9 @@ import javafx.event.ActionEvent;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -33,6 +36,22 @@ public class LogInControler {
     private TextField enterPasswordField;
     @FXML
     private Label infoLabel;
+
+    private String getMd5(String input) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            byte[] messageDigest = md.digest(input.getBytes());
+            BigInteger no = new BigInteger(1, messageDigest);
+            String hashtext = no.toString(16);
+            while (hashtext.length() < 32) {
+                hashtext = "0" + hashtext;
+            }
+            return hashtext;
+        }
+        catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public static int stringCompare(String str1, String str2) {
         int l1 = str1.length();
@@ -69,7 +88,7 @@ public class LogInControler {
                     tok.add(defaultTokenizer.nextToken());
                 }
 
-                if (stringCompare(user,tok.get(0))==0 && stringCompare(password,tok.get(1))==0){
+                if (stringCompare(user,tok.get(0))==0 && stringCompare(getMd5(password),tok.get(1))==0){
                     Stage CurrentStage= (Stage) cancelButton.getScene().getWindow();
                     CurrentStage.close();
 
@@ -77,6 +96,7 @@ public class LogInControler {
                     Parent root1=(Parent) loader.load();
                     Stage stage=new Stage();
                     stage.setTitle("Red Line Weather App");
+                    stage.setUserData(user);
                     stage.setScene(new Scene(root1));
                     stage.show();
 
