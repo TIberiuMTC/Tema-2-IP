@@ -38,3 +38,10 @@
 14-01-2021 00:16:36  tiberiu441  Bucharest  Current Temperature: 273.83  Current Humidity: 93.0  Wind Speed: 0.51  Wind Angle: 0.0  Main Weather: Mist   Weather details : mist
 14-01-2021 00:20:40  tiberiu441  Bucharest  Current Temperature: 273.83  Current Humidity: 93.0  Wind Speed: 0.51  Wind Angle: 0.0  Main Weather: Mist   Weather details : mist
 14-01-2021 00:22:04  tiberiu441  Bucharest  Current Temperature: 273.83  Current Humidity: 93.0  Wind Speed: 0.51  Wind Angle: 0.0  Main Weather: Mist   Weather details : mist
+14-01-2021 18:35:13  tiberiu441  Bucharest  Current Temperature: 273.38  Current Humidity: 80.0  Wind Speed: 4.63  Wind Angle: 250.0  Main Weather: Clear   Weather details : clear sky
+14-01-2021 18:35:23  tiberiu441  Istanbul  Current Temperature: 277.68  Current Humidity: 65.0  Wind Speed: 3.09  Wind Angle: 260.0  Main Weather: Clouds   Weather details : broken clouds
+15-01-2021 00:58:44  tiberiu441  Constanța  Current Temperature: 272.1  Current Humidity: 93.0  Wind Speed: 5.66  Wind Angle: 260.0  Main Weather: Clear   Weather details : clear sky
+15-01-2021 00:58:50  tiberiu441  Munich  Current Temperature: 269.21  Current Humidity: 92.0  Wind Speed: 2.18  Wind Angle: 96.0  Main Weather: Clouds   Weather details : broken clouds
+15-01-2021 00:58:54  tiberiu441  Istanbul  Current Temperature: 278.22  Current Humidity: 65.0  Wind Speed: 4.12  Wind Angle: 210.0  Main Weather: Clouds   Weather details : broken clouds
+15-01-2021 00:58:59  tiberiu441  Warsaw  Current Temperature: 269.07  Current Humidity: 80.0  Wind Speed: 5.14  Wind Angle: 340.0  Main Weather: Clouds   Weather details : broken clouds
+15-01-2021 00:59:05  tiberiu441  Ostrava  Current Temperature: 271.39  Current Humidity: 93.0  Wind Speed: 2.06  Wind Angle: 240.0  Main Weather: Snow   Weather details : light snow
