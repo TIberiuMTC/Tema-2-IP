@@ -13,6 +13,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 
+/*
+ *
+ *@author Mihai Tiberiu
+ * */
+
 public class Main extends Application {
     public static void main(String[] args)
     {

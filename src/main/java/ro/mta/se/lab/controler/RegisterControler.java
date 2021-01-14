@@ -21,6 +21,11 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/*
+ *
+ *@author Mihai Tiberiu
+ * */
+
 public class RegisterControler {
 
     @FXML

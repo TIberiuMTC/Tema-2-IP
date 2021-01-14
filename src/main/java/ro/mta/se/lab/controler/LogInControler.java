@@ -22,6 +22,11 @@ import java.util.StringTokenizer;
 
 import java.util.ArrayList;
 
+/*
+ *
+ *@author Mihai Tiberiu
+ * */
+
 public class LogInControler {
 
     @FXML
@@ -37,7 +42,7 @@ public class LogInControler {
     @FXML
     private Label infoLabel;
 
-    private String getMd5(String input) {
+    private String getMd5(String input) { //functie clasica de calcualre a unui MD5
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] messageDigest = md.digest(input.getBytes());
@@ -109,8 +114,7 @@ public class LogInControler {
         }
     }
 
-    public void registerButtonOnAction(ActionEvent event){
-        Parent root;
+    public void registerButtonOnAction(ActionEvent event){ //functia care se ruleaza cand e apasat butonul de register
         try {
             Stage CurrentStage= (Stage) cancelButton.getScene().getWindow();
             CurrentStage.close();
@@ -126,7 +130,7 @@ public class LogInControler {
         }
     }
 
-    public void cancelButtonOnAction(ActionEvent event){
+    public void cancelButtonOnAction(ActionEvent event){ //functia care se ruleaza cand e apasat butonul de close
         Stage stage= (Stage) cancelButton.getScene().getWindow();
         stage.close();
     }

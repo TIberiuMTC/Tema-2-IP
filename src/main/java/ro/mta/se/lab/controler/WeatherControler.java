@@ -28,12 +28,19 @@ import com.google.gson.*;
 import com.google.gson.reflect.*;
 import javafx.stage.Stage;
 
+import ro.mta.se.lab.model.Country;
+import ro.mta.se.lab.model.City;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import java.nio.file.StandardOpenOption;
+/*
+*
+*@author Mihai Tiberiu
+* */
 
 public class WeatherControler {
+    private ArrayList<Country> _mCountries=new ArrayList<Country>();
     @FXML
     private ChoiceBox countryDrop;
     @FXML
@@ -61,9 +68,6 @@ public class WeatherControler {
     @FXML
     private Label suggestionInfo;
 
-    private ArrayList<String> fullCities=new ArrayList<String>();
-    private ArrayList<String> fullCountries=new ArrayList<String>();
-
     public static Map<String, Object> jsonToMap(String str){
         Map<String, Object> map=new Gson().fromJson(str, new TypeToken<HashMap<String,Object>>() {}.getType());
         return map;
@@ -78,16 +82,6 @@ public class WeatherControler {
             }
         }
         return returner;
-    }
-
-    private String brackets_remover(String str){
-        String copyCat="";
-        for (int i=0;i<str.length();i++){
-            if (str.charAt(i)!='[' && str.charAt(i)!=']'){
-                copyCat+=str.charAt(i);
-            }
-        }
-        return copyCat;
     }
 
     public void actionButtonOnAction(ActionEvent event){
@@ -177,39 +171,31 @@ public class WeatherControler {
             Stage stage = (Stage) node.getScene().getWindow();
             String u = (String) stage.getUserData();
 
+            clothingInfo.setText("Hello "+u);
+            shouldInfo.setText("Don't forget to take your");
             if (weatherString.contains("Clear")){
                 Image image = new Image("view/Sunny.jpg");
                 weatherIco.setImage(image);
-                clothingInfo.setText("Hello "+u);
-                shouldInfo.setText("Don't forget to take your");
                 suggestionInfo.setText("Sun glasses");
             }
             if (weatherString.contains("Clouds")){
                 Image image = new Image("view/cloudy.jpg");
                 weatherIco.setImage(image);
-                clothingInfo.setText("Hello "+u);
-                shouldInfo.setText("Don't forget to take your");
                 suggestionInfo.setText("Umbrella");
             }
             if (weatherString.contains("Mist")){
                 Image image = new Image("view/partialSunny.jpg");
                 weatherIco.setImage(image);
-                clothingInfo.setText("Hello "+u);
-                shouldInfo.setText("Don't forget to take your");
                 suggestionInfo.setText("Scarf");
             }
             if (weatherString.contains("Rain")){
                 Image image = new Image("view/rainy.jpg");
                 weatherIco.setImage(image);
-                clothingInfo.setText("Hello "+u);
-                shouldInfo.setText("Don't forget to take your");
                 suggestionInfo.setText("Umbrella");
             }
             if (weatherString.contains("Snow")){
                 Image image = new Image("view/Snowy.jpg");
                 weatherIco.setImage(image);
-                clothingInfo.setText("Hello "+u);
-                shouldInfo.setText("Don't forget to take your");
                 suggestionInfo.setText("Gloves");
             }
 
@@ -230,9 +216,11 @@ public class WeatherControler {
     public void cityDropOnAction(ActionEvent event) {
         String target=countryDrop.getSelectionModel().getSelectedItem().toString();
         List<String>prompter=new ArrayList<String>();
-        for (int i=0;i<fullCountries.size();i++){
-            if (fullCountries.get(i).equals(target)){
-                prompter.add(fullCities.get(i));
+        for (int i=0;i<this._mCountries.size();i++){
+            if (this._mCountries.get(i).getCountryName().equals(target)){
+                for (int j=0;j<this._mCountries.get(i).getCities().size();j++){
+                    prompter.add(this._mCountries.get(i).getCities().get(j).getCityName());
+                }
             }
         }
         List<String> beginList=new ArrayList<String>();
@@ -255,21 +243,32 @@ public class WeatherControler {
                 while (defaultTokenizer.hasMoreTokens()) {
                     tok.add(defaultTokenizer.nextToken());
                 }
-                city.add(tok.get(1));
-                city.add(tok.get(4));
-            }
-
-            for (int i=0;i<city.size();i++){
-                if (i%2==0){
-                    fullCities.add(city.get(i));
-                }else{
-                    fullCountries.add(city.get(i));
+                City temp=new City(tok.get(1),tok.get(0),tok.get(2),tok.get(3));
+                String countryTracker= tok.get(4);
+                int reckon=0;
+                if (this._mCountries.size()==0){
+                    Country tempCountry=new Country(temp,countryTracker);
+                    this._mCountries.add(tempCountry);
+                }else {
+                    for (int i = 0; i < this._mCountries.size(); i++) {
+                        if (this._mCountries.get(i).getCountryName().equals(countryTracker)) {
+                            this._mCountries.get(i).addCity(temp);
+                            reckon++;
+                            break;
+                        }
+                    }
+                    if (reckon == 0) {
+                        Country tempCountry = new Country(temp, countryTracker);
+                        this._mCountries.add(tempCountry);
+                    }
+                    reckon = 0;
                 }
             }
 
-            List<String> beginList=new ArrayList<String>();
-            beginList=this.removeDuplicateElements(fullCountries);
-
+            ArrayList<String>beginList=new ArrayList<String>();
+            for (int i=0;i<this._mCountries.size();i++){
+                beginList.add(this._mCountries.get(i).getCountryName());
+            }
             ObservableList countryList = FXCollections.observableList(beginList);
             countryDrop.getItems().clear();
             countryDrop.setItems(countryList);
