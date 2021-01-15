@@ -1,3 +1,0 @@
-13-01-2021 17:06:05  tibi  Tarascon  Current Temperature: 287.81  Current Humidity: 51.0  Wind Speed: 7.72  Wind Angle: 310.0
-13-01-2021 17:06:11  tibi  Slatina  Current Temperature: 275.3  Current Humidity: 75.0  Wind Speed: 8.75  Wind Angle: 290.0
-13-01-2021 17:06:14  tibi  Berlin  Current Temperature: 276.69  Current Humidity: 81.0  Wind Speed: 8.23  Wind Angle: 240.0
